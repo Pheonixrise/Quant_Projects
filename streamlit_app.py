@@ -36,7 +36,7 @@ if st.sidebar.button("Fetch Data"):
         model.fit(data)
 
         # Forcast
-        future = model.make_future_dataframe(periods= forcast_horizon)
+        future = model.make_future_dataframe(periods= forecast_horizon)
         forecast = model.predict(future)
 
         # plot results using plotly
