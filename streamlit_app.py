@@ -48,4 +48,4 @@ if st.sidebar.button("Fetch Data"):
         # Additional Trend Components
         st.subheader("Trend and Seasonal Components")
         st.write("Yearly and Weekly Trends")
-        st.write(model.plot_components(forcast))
+        st.write(model.plot_components(forecast))
