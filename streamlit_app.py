@@ -32,7 +32,7 @@ if st.sidebar.button("Fetch Data"):
         st.dataframe(data.tail())
 
         #Prophet Model
-        model = Prophet(daily_seasonality = False, yearly_seasonality= True, Weekly_seasonality = True)
+        model = Prophet(daily_seasonality = False, yearly_seasonality= True, weekly_seasonality = True)
         model.fit(data)
 
         # Forcast
