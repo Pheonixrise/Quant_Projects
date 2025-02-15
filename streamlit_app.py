@@ -20,7 +20,7 @@ st.sidebar.header("User Input")
 ticker = st.sidebar.text_input("Enter Stock Ticker", "NVDA")
 start_date = st.sidebar.date_input("Start Date", pd.to_datetime("2015-01-01"))
 end_date = st.sidebar.date_input("End Date", pd.to_datetime("2025-02-02"))
-forcast_horizon = st.sidebar.slider("Select Forcast Horizon (days) ",30,90)
+forecast_horizon = st.sidebar.slider("Select Forecast Horizon (days) ",30,90)
 
 if st.sidebar.button("Fetch Data"):
         #fetch data
@@ -40,7 +40,7 @@ if st.sidebar.button("Fetch Data"):
         forecast = model.predict(future)
 
         # plot results using plotly
-        fig = plot_plotly(model,forcast)
+        fig = plot_plotly(model,forecast)
         st.subheader("Forcasted Stock Price")
         st.plotly_chart(fig)
 
