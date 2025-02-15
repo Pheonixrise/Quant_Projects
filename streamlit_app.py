@@ -1,5 +1,5 @@
 
-import yfinance
+pip install yfinance
 
 
 
