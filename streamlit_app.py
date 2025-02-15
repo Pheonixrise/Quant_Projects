@@ -1,5 +1,5 @@
 
-install_yfinance()
+import yfinance
 
 
 
