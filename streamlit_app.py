@@ -1,13 +1,4 @@
-import subprocess
-import sys
 
-#function to install yfinance if missing
-def install_yfinance():
-        try:
-                import yfinance
-        except ImportError:
-                subprocess.check_call([sys.executable,"-m", "pip", "install", "yfinance"])
-                import yfinance
 install_yfinance()
 
 
